@@ -8,7 +8,7 @@ export default function Home({ params }: any) {
     const random = Math.random().toString(36).substring(7)
     const router = useRouter()
     return (
-        <main>
+        <main style={{ display: 'flex', flexDirection: 'column', gap: 20 }}>
             {JSON.stringify({ params })}
             <Link href={`/another/${random}`}>
                 Navigate with link to /another/{random}
